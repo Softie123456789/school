@@ -1,0 +1,210 @@
+@font-face {
+  font-family: "OpenSansregular";
+  src: url('../fonts/fontie-package/Open\ Sans\ Regular.woff2') format('woff2'), url('../fonts/fontie-package/Open\ Sans\ Regular.woff') format('woff');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "OpenSansbold";
+  src: url('../fonts/fontie-package/Open\ Sans\ Bold.woff2') format('woff2'), url('../fonts/fontie-package/Open\ Sans\ Bold.woff') format('woff');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Otomanopee_One";
+  src: url('../fonts/fontie-package/Otomanopee\ One\ Regular.woff2') format('woff2'), url('../fonts/fontie-package/Otomanopee\ One\ Regular.woff') format('woff');
+  font-style: normal;
+  font-weight: normal;
+}
+
+h1,
+h2,
+a,
+blockquote {
+  font-family: "Otomanopee_One";
+}
+
+h3 {
+  font-family: "OpenSansbold";
+}
+
+P,
+span {
+  font-family: "OpenSansregular";
+}
+
+
+ul {
+  padding-left: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  box-shadow: hsla(0, 0%, 0%, 0.251) 0px 14px 25px;
+}
+
+a {
+  color: hsl(0, 0%, 0%);
+  text-align: center;
+  padding: 1.25rem 1.25rem;
+  display: block;
+  transition: color 0.3s;
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+@media (min-width: 33rem) {
+  ul {
+    flex-wrap: nowrap;
+    flex-direction: row;
+    gap: 1.2rem;
+    justify-content: center;
+  }
+
+  .hover {
+    margin-top: 1.5rem;
+  }
+
+  .hover:hover {
+    border-bottom: solid hsl(326, 95%, 22%);
+  }
+}
+
+@media (min-width: 40rem) {
+  ul {
+    justify-content: flex-end;
+  }
+
+  li {
+    padding-bottom: 2rem;
+  }
+
+  .logo {
+    position: absolute;
+    left: 3rem;
+  }
+}
+
+a:hover {
+  color: hsl(326, 95%, 22%);
+}
+
+.logo {
+  margin: auto;
+  width: 4rem;
+}
+
+.logo:hover {
+  opacity: 0.5;
+}
+
+
+.pink {
+  color: hsl(326, 95%, 22%);
+}
+
+
+main {
+  padding-top: 2rem;
+  max-width: 70rem;
+  margin: auto;
+}
+
+.triangle {
+  width: 10rem;
+  height: 5rem;
+  float: left;
+  margin: 1rem 1rem 3rem 1rem;
+}
+
+article h3 {
+  z-index: auto;
+  text-align: center;
+  font-size: 2rem;
+  color: white;
+  text-shadow: hsl(0, 0%, 0%) 3px 3px;
+}
+
+.border {
+  background-color: white;
+  border-radius: 51% 49% 46% 54% / 62% 56% 44% 38%;
+}
+
+.h3_1 {
+  padding-top: 0rem;
+}
+
+.h3_2 {
+  padding-bottom: 0rem;
+}
+
+.triangle img {
+  position: absolute;
+  width: 8rem;
+  margin-top: -7.5rem;
+  margin-left: 1.5rem;
+  z-index: -1;
+  animation: rotation 2s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+article p {
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+}
+
+article {
+  margin-top: 3rem;
+  margin-left: 1rem;
+}
+
+main blockquote {
+  font-size: 4rem;
+  color: hsl(0, 0%, 47%);
+}
+
+.quote p {
+  font-size: 1rem;
+  color: hsl(326, 95%, 22%);
+}
+
+.quote {
+  border-left: solid hsl(326, 95%, 22%) 0.5rem;
+  padding-left: 16%;
+}
+
+video {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+footer {
+  background-color: hsl(0, 0%, 13%);
+  margin-top: 0;
+  margin-bottom: 0;
+  overflow: hidden;
+}
+
+footer span {
+  color: hsl(0, 0%, 100%);
+}
+
+
+.img_footer {
+  width: 20%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 4rem;
+}
